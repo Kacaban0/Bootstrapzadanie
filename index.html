@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Sklep z bronią</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #d0d0d0;
+    }
+    .navbar, .footer, .card {
+      background-color: #333333; 
+      color: #d0d0d0; 
+    }
+    .navbar-brand, .nav-link, .footer p {
+      color: #d0d0d0;
+    }
+    .navbar-brand:hover, .nav-link:hover {
+      color: #d14949;
+    }
+    .header {
+      background-color: #264646; 
+      color: #ffffff;
+    }
+    .card {
+      border: 1px solid #d14949;
+    }
+    .card-title {
+      color: #d14949;
+    }
+    .btn-primary {
+      background-color: #264646; 
+      border-color: #264646;
+    }
+    .btn-primary:hover {
+      background-color: #d14949; 
+      border-color: #d14949;
+    }
+    .footer {
+      background-color: #111111; 
+    }
+    .img-fluid {
+    max-height: 40px; 
+    max-width: 70px; 
+    width: auto;
+    height: auto; 
+  }
+
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Specjał Separatatysty</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Przełącz nawigację">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#onas">O nas</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#produkty">Produkty</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontakt">Kontakt</a> 
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header text-white text-center py-5">
+    <h1>Witamy w naszym sklepie!</h1>
+    <p>Oferujemy szeroki wybór broni: od rewolwerów po skutery podwodne.</p>
+  </header>
+  
+  <div class="container mt-5" id="onas">
+    <h2 class="text-center mb-4">O nas</h2>
+    <p class="text-center">
+        Witamy w naszym sklepie, znajdziesz najlepszą broń, która wygra z każdym potworem, rybą czy człowiekiem. 
+        Nasza misja to zapewnienie Ci najwyższej jakości broni oraz narzędzi, która nie tylko spełnia najwyższe standardy bezpieczeństwa, 
+        ale również zapewnia skuteczność w każdej sytuacji. 
+        Oferujemy szeroki asortyment broni, od rewolwerów po karabiny, które zostały starannie wyselekcjonowane, aby sprostać 
+        potrzebom zarówno profesjonalistów, jak i amatorów. 
+        Oferujemy także asortyment narzędz które pomogą w każdej wyprawie.
+        Wierzymy, że każdy zasługuje na najlepszą ochronę, dlatego współpracujemy z wiodącymi producentami, aby dostarczyć Ci 
+        produkty, na które możesz liczyć w najtrudniejszych chwilach. 
+        Dołącz do nas i odkryj moc, która pozwoli Ci pokonać wszelkie zagrożenia!
+    </p>
+  </div>
+
+  <div class="container my-5" id="opinie"> 
+    <h2 class="text-center mb-4">Opinie</h2>
+    <div class="text-center">
+      <p><strong>Jan Barotrauma:</strong> "Niesamowity wybór broni i wspaniała obsługa! Polecam wszystkim! Żaden pełzacz nie da rady na mnie"</p>
+      <p><strong>Kapitan Hognose:</strong> "Zakupy w tym sklepie to czysta przyjemność. Na pewno wrócę po więcej! Bez tych broni do głębin to głupota"</p>
+      <p><strong>Artur Dolittle:</strong> "Ceny są za wysokie, a obsługa mogłaby być lepsza."</p>
+    </div>
+  </div>
+
+  <div class="container my-5" id="produkty">
+    <h2 class="text-center mb-4">Nasze produkty</h2>
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://barotraumagame.com/baro-wiki/images/a/a4/Revolver_sprite.png" height="70" width="30" class="img-fluid card-img-top" alt="Rewolwer">
+          <div class="card-body">
+            <h5 class="card-title">Rewolwer</h5>
+            <p class="card-text">Klasyczny rewolwer, idealny do samoobrony.</p>
+            <p class="card-text"><strong>Cena: 100MK</strong></p> 
+            <a href="#" class="btn btn-primary">Zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="harpoongun.png" class="img-fluid card-img-top" alt="Pistolet harpunowy">
+          <div class="card-body">
+            <h5 class="card-title">Pistolet harpunowy</h5>
+            <p class="card-text">Idealny do sportów wodnych i połowów. Szybki oraz potężny</p>
+            <p class="card-text"><strong>Cena: 170MK</strong></p> 
+
+            <a href="#" class="btn btn-primary">Zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="pistolet_maszynowy.png" class="img-fluid card-img-top" alt="Pistolet maszynowy">
+          <div class="card-body">
+            <h5 class="card-title">Pistolet maszynowy</h5>
+            <p class="card-text">Zaawansowany model do profesjonalnego użytku. Nie za cieżki ale ma swoją moc.</p>
+            <p class="card-text"><strong>Cena: 200MK</strong></p> 
+
+            <a href="#" class="btn btn-primary">Zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="karabin_szturmowy.png" class="img-fluid card-img-top" alt="Karabin szturmowy">
+          <div class="card-body">
+            <h5 class="card-title">Karabin szturmowy</h5>
+            <p class="card-text">Potężna broń bojowa o dużej szybkostrzelności. Z tym nikt i nic ci nie podskoczy.</p>
+            <p class="card-text"><strong>Cena: 720MK</strong></p> 
+
+            <a href="#" class="btn btn-primary">Zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="noz.png" class="img-fluid card-img-top" alt="Nóż">
+          <div class="card-body">
+            <h5 class="card-title">Nóż</h5>
+            <p class="card-text">Ostry, wielofunkcyjny nóż do wszelkich zadań.</p>
+            <p class="card-text"><strong>Cena: 29MK</strong></p> 
+
+            <a href="#" class="btn btn-primary">Zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="strzelba.png" class="img-fluid card-img-top" alt="Strzelba">
+          <div class="card-body">
+            <h5 class="card-title">Strzelba</h5>
+            <p class="card-text">Mocna broń myśliwska o dużym zasięgu.</p>
+            <p class="card-text"><strong>Cena: 500MK</strong></p> 
+
+            <a href="#" class="btn btn-primary">Zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 class="text-center my-4">Narzędzia</h2>
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="lom.png" class="img-fluid card-img-top" alt="Łom">
+          <div class="card-body">
+            <h5 class="card-title">Łom</h5>
+            <p class="card-text">Wielofunkcyjne narzędzie do różnych zastosowań.</p>
+            <p class="card-text"><strong>Cena: 20MK</strong></p> 
+
+            <a href="#" class="btn btn-primary">Zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="srubokret.png" class="img-fluid card-img-top" alt="Śrubokręt">
+          <div class="card-body">
+            <h5 class="card-title">Śrubokręt</h5>
+            <p class="card-text">Niezbędne narzędzie do pracy przy prądzie.</p>
+            <p class="card-text"><strong>Cena: 10MK</strong></p> 
+
+            <a href="#" class="btn btn-primary">Zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="klucz_mechaniczny.png" class="img-fluid card-img-top" alt="Klucz mechaniczny">
+          <div class="card-body">
+            <h5 class="card-title">Klucz mechaniczny</h5>
+            <p class="card-text">Wytrzymały klucz do napraw mechanicznych.</p>
+            <p class="card-text"><strong>Cena: 29MK</strong></p> 
+
+            <a href="#" class="btn btn-primary">Zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="skuter.png" class="img-fluid card-img-top" alt="Skuter">
+          <div class="card-body">
+            <h5 class="card-title">Skuter</h5>
+            <p class="card-text">Praktyczny pojazd ręczny do szybkiego przemieszczania się.</p>
+            <p class="card-text"><strong>Cena: 180MK</strong></p> 
+
+            <a href="#" class="btn btn-primary">Zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="radio.png" class="img-fluid card-img-top" alt="Ręczne radio">
+          <div class="card-body">
+            <h5 class="card-title">Ręczne radio</h5>
+            <p class="card-text">Niezawodne urządzenie do komunikacji na krótkim dystansie.</p>
+            <p class="card-text"><strong>Cena: 105MK</strong></p> 
+
+            <a href="#" class="btn btn-primary">Zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="latarka.png" class="img-fluid card-img-top" alt="Latarka">
+          <div class="card-body">
+            <h5 class="card-title">Latarka</h5>
+            <p class="card-text">Niezbędne narzędzie oświetleniowe w ciemnych miejscach.</p>
+            <p class="card-text"><strong>Cena: 50MK</strong></p> 
+
+            <a href="#" class="btn btn-primary">Zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer text-center py-3" id="kontakt"> 
+    <p>© 2024 Specjał Separatysty. Wszelkie prawa zastrzeżone.</p>
+    <p>Kacper Kacaban Kosowski XXX-YYY-ZZZ pewien@gmail.com</p>
+  </footer>
+
+</body>
+</html>
