@@ -20,10 +20,22 @@
     .navbar-brand:hover, .nav-link:hover {
       color: #d14949;
     }
-    .header {
-      background-color: #264646; 
-      color: #ffffff;
+    .header{
+    background-image: url('https://cdn1.epicgames.com/spt-assets/2ff3a988723d4a80a33102eb23ae2525/barotrauma-xrg0z.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px;
+    text-align: center;
     }
+
+   .header h1, .header p{
+   background-color: rgba(0, 0, 0, 0.6); 
+   display: inline-block;
+   padding: 10px;
+   border-radius: 5px;
+  } 
+
     .card {
       border: 1px solid #d14949;
     }
@@ -42,12 +54,49 @@
       background-color: #111111; 
     }
     .img-fluid {
-    max-height: 40px; 
-    max-width: 70px; 
-    width: auto;
-    height: auto; 
-    margin:10px ;
-  }
+      max-height: 40px; 
+      max-width: 70px; 
+      width: auto;
+      height: auto; 
+      margin:10px ;
+    }
+
+    .carousel-item img {
+      max-width: 800px;
+      max-height: 800px;
+      width: auto;
+      height: auto;
+      margin: 0 auto; 
+    }
+    .fundraising {
+     background-color: #f3f3f3;
+     padding: 20px;
+     border-radius: 10px;
+    }
+
+    .progress-bar-container {
+     width: 100%;
+     background-color: #e0e0e0;
+     border-radius: 25px;
+     margin: 20px 0;
+     height: 30px;
+     overflow: hidden;
+    }
+
+    .progress-bar {
+     width: 100%;
+     height: 100%;
+     background-color: #e0e0e0;
+      border-radius: 25px;
+    }
+
+    .progress {
+   display: block;
+   height: 100%;
+   width: 50%; 
+   background-color: #4caf50; 
+   border-radius: 25px 0 0 25px;
+   }
 
   </style>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -78,30 +127,55 @@
 
   <header class="header text-white text-center py-5">
     <h1>Witamy w naszym sklepie!</h1>
-    <p>Oferujemy szeroki wybór broni: od rewolwerów po skutery podwodne.</p>
-  </header>
+    <h2>O nas</h2>
+    <p>Witamy w naszym sklepie, znajdziesz najlepszą broń, która wygra z każdym potworem, rybą czy człowiekiem. 
+      Nasza misja to zapewnienie Ci najwyższej jakości broni oraz narzędzi, która nie tylko spełnia najwyższe standardy bezpieczeństwa, 
+      ale również zapewnia skuteczność w każdej sytuacji. 
+      Oferujemy szeroki asortyment broni, od rewolwerów po karabiny, które zostały starannie wyselekcjonowane, aby sprostać 
+      potrzebom zarówno profesjonalistów, jak i amatorów. 
+      Oferujemy także asortyment narzędz które pomogą w każdej wyprawie.
+      Wierzymy, że każdy zasługuje na najlepszą ochronę, dlatego współpracujemy z wiodącymi producentami, aby dostarczyć Ci 
+      produkty, na które możesz liczyć w najtrudniejszych chwilach. 
+      Dołącz do nas i odkryj moc, która pozwoli Ci pokonać wszelkie zagrożenia!</p>
   
-  <div class="container mt-5" id="onas">
-    <h2 class="text-center mb-4">O nas</h2>
-    <p class="text-center">
-        Witamy w naszym sklepie, znajdziesz najlepszą broń, która wygra z każdym potworem, rybą czy człowiekiem. 
-        Nasza misja to zapewnienie Ci najwyższej jakości broni oraz narzędzi, która nie tylko spełnia najwyższe standardy bezpieczeństwa, 
-        ale również zapewnia skuteczność w każdej sytuacji. 
-        Oferujemy szeroki asortyment broni, od rewolwerów po karabiny, które zostały starannie wyselekcjonowane, aby sprostać 
-        potrzebom zarówno profesjonalistów, jak i amatorów. 
-        Oferujemy także asortyment narzędz które pomogą w każdej wyprawie.
-        Wierzymy, że każdy zasługuje na najlepszą ochronę, dlatego współpracujemy z wiodącymi producentami, aby dostarczyć Ci 
-        produkty, na które możesz liczyć w najtrudniejszych chwilach. 
-        Dołącz do nas i odkryj moc, która pozwoli Ci pokonać wszelkie zagrożenia!
-    </p>
-  </div>
-
+  </header>
   <div class="container my-5" id="opinie"> 
     <h2 class="text-center mb-4">Opinie</h2>
-    <div class="text-center">
-      <p><strong>Jan Barotrauma:</strong> "Niesamowity wybór broni i wspaniała obsługa! Polecam wszystkim! Żaden pełzacz nie da rady na mnie"</p>
-      <p><strong>Kapitan Hognose:</strong> "Zakupy w tym sklepie to czysta przyjemność. Na pewno wrócę po więcej! Bez tych broni do głębin to głupota"</p>
-      <p><strong>Artur Dolittle:</strong> "Ceny są za wysokie, a obsługa mogłaby być lepsza."</p> 
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://preview.redd.it/curious-artie-dolittle-death-v0-acz8c2m8lcgb1.gif?width=605&auto=webp&s=39992f2ca85eedeb910234e49055a50774491df5" alt="Arti" class="d-block">
+          <div class="carousel-caption">
+            <h3>Artie Dollitle</h3>
+            <p>Skuter nie zadziałał... Ale łom pomógł</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.imgur.com/cVChsQ8.jpeg" alt="Jacek" class="d-block">
+          <div class="carousel-caption">
+            <h3>Jacek Sparrow</h3>
+            <p>Przecinarka plazmowa działa wyśmienicie. Ceny również są piękne. Nie było żadnych problemów</p>
+          </div> 
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ytimg.com/vi/flzrCyJ8RiI/maxresdefault.jpg" alt="Kapitan" class="d-block">  
+          <div class="carousel-caption">
+            <h3>Arendt Dickman</h3>
+            <p>Pistolety działały wyśmienicie. Aż przestały. Troche za drogo</p>
+          </div>  
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
   </div>
 
@@ -116,7 +190,6 @@
             <h5 class="card-title">Rewolwer</h5>
             <p class="card-text">Klasyczny rewolwer, idealny do samoobrony.</p>
             <p class="card-text"><strong>Cena: 100MK</strong></p> 
-            <a href="#" class="btn btn-primary">Zobacz więcej</a>
           </div>
         </div>
       </div>
@@ -129,7 +202,6 @@
             <p class="card-text">Idealny do sportów wodnych i połowów. Szybki oraz potężny</p>
             <p class="card-text"><strong>Cena: 170MK</strong></p> 
 
-            <a href="#" class="btn btn-primary">Zobacz więcej</a>
           </div>
         </div>
       </div>
@@ -142,7 +214,6 @@
             <p class="card-text">Zaawansowany model do profesjonalnego użytku. Nie za cieżki ale ma swoją moc.</p>
             <p class="card-text"><strong>Cena: 200MK</strong></p> 
 
-            <a href="#" class="btn btn-primary">Zobacz więcej</a>
           </div>
         </div>
       </div>
@@ -155,7 +226,6 @@
             <p class="card-text">Potężna broń bojowa o dużej szybkostrzelności. Z tym nikt i nic ci nie podskoczy.</p>
             <p class="card-text"><strong>Cena: 720MK</strong></p> 
 
-            <a href="#" class="btn btn-primary">Zobacz więcej</a>
           </div>
         </div>
       </div>
@@ -168,7 +238,6 @@
             <p class="card-text">Ostry, wielofunkcyjny nóż do wszelkich zadań.</p>
             <p class="card-text"><strong>Cena: 29MK</strong></p> 
 
-            <a href="#" class="btn btn-primary">Zobacz więcej</a>
           </div>
         </div>
       </div>
@@ -181,7 +250,6 @@
             <p class="card-text">Mocna broń myśliwska o dużym zasięgu.</p>
             <p class="card-text"><strong>Cena: 500MK</strong></p> 
 
-            <a href="#" class="btn btn-primary">Zobacz więcej</a>
           </div>
         </div>
       </div>
@@ -199,7 +267,6 @@
             <p class="card-text">Wielofunkcyjne narzędzie do różnych zastosowań.</p>
             <p class="card-text"><strong>Cena: 20MK</strong></p> 
 
-            <a href="#" class="btn btn-primary">Zobacz więcej</a>
           </div>
         </div>
       </div>
@@ -212,7 +279,6 @@
             <p class="card-text">Niezbędne narzędzie do pracy przy prądzie.</p>
             <p class="card-text"><strong>Cena: 10MK</strong></p> 
 
-            <a href="#" class="btn btn-primary">Zobacz więcej</a>
           </div>
         </div>
       </div>
@@ -226,7 +292,6 @@
             <p class="card-text">Wytrzymały klucz do napraw mechanicznych.</p>
             <p class="card-text"><strong>Cena: 29MK</strong></p> 
 
-            <a href="#" class="btn btn-primary">Zobacz więcej</a>
           </div>
         </div>
       </div>
@@ -239,20 +304,18 @@
             <p class="card-text">Praktyczny pojazd ręczny do szybkiego przemieszczania się.</p>
             <p class="card-text"><strong>Cena: 180MK</strong></p> 
 
-            <a href="#" class="btn btn-primary">Zobacz więcej</a>
           </div>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="card">
-          <img src="https://barotraumagame.com/baro-wiki/images/2/26/Headset_icon.png" class="img-fluid card-img-top" alt="Ręczne radio">
+          <img src="https://barotraumagame.com/baro-wiki/images/1/13/Plasma_Cutter.png" class="img-fluid card-img-top" alt="Plasma_Cutter">
           <div class="card-body">
-            <h5 class="card-title">Ręczne radio</h5>
-            <p class="card-text">Niezawodne urządzenie do komunikacji na każy dystans.</p>
+            <h5 class="card-title">Przecinarka Plazmowa</h5>
+            <p class="card-text">Niezawodne urządzenie do cięcia każdej substancji</p>
             <p class="card-text"><strong>Cena: 105MK</strong></p> 
 
-            <a href="#" class="btn btn-primary">Zobacz więcej</a>
           </div>
         </div>
       </div>
@@ -266,13 +329,24 @@
             <p class="card-text">Niezbędne narzędzie oświetleniowe w ciemnych miejscach.</p>
             <p class="card-text"><strong>Cena: 50MK</strong></p> 
 
-            <a href="#" class="btn btn-primary">Zobacz więcej</a>
           </div>
         </div>
       </div>
 
     </div>
   </div>
+
+  <section class="Zbiorka">
+    <h3>Zbiórka pieniędzy(z kazdym kupnem jesteśmy coraz bliżej tego!)</h3>
+    <p>Jesteśmy w połowie drogi do osiągnięcia naszego celu! NOWEJ LOKALIZACJI ORAZ NOWYCH PRODUKTÓW!!!!!</p>
+    <div class="progress-bar-container">
+      <div class="progress-bar">
+        <span class="progress"></span>
+      </div>
+    </div>
+    <p>Zebrano: 50% z planowanej kwoty :></p>
+  </section>
+
 
   <footer class="footer text-center py-3" id="kontakt"> 
     <p>© 2024 Specjał Separatysty. Wszelkie prawa zastrzeżone.</p>
